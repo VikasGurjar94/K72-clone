@@ -1,8 +1,14 @@
 import React from 'react'
+import { Routes , Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Agence from './pages/Agence';
+import Work from './pages/Work';
 
 const App = () => {
   return (
-    <div className='text-5xl rounded-2xl absolute bg-amber-800 '>vikas op in the chat</div>
+    <div>
+      <Home></Home>
+    </div>
   )
 }
 
