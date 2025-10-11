@@ -10,9 +10,11 @@ const Home = () => {
       <div className=' h-screen w-full fixed   '>
         <Vider></Vider>
       </div>
-      <div className='h-screen w-full relative'>
-        <HomeLowerText></HomeLowerText>
+      <div className='h-screen flex flex-col justify-between items-center w-full relative'>
+        
         <HomeUpperText/>
+        <HomeLowerText/>
+       
       </div>
     </div>
   )
