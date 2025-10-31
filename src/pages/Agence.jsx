@@ -6,24 +6,18 @@ gsap.registerPlugin(ScrollTrigger)
 
 
  const imageArray = [
-    'https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Olivier_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Lawrence_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/HugoJoseph_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/ChantalG_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MyleneS_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/SophieA_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Claire_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Michele_480X640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MEL_480X640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/CAMILLE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MAXIME_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/CAMILLE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MAXIME_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg'
+    
+    'assets/Carl_480x640-480x640.jpg',
+    'assets/Olivier_480x640-480x640.jpg',
+    'assets/Lawrence_480x640-480x640.jpg',
+    'assets/HugoJoseph_480x640-480x640.jpg',
+    'assets/ChantalG_480x640-480x640.jpg',
+    'assets/MyleneS_480x640-480x640.jpg',
+    'assets/SophieA_480x640-480x640.jpg',
+    'assets/Claire_480x640-480x640.jpg',
+    'assets/Michele_480X640-480x640.jpg',
+    'assets/MEL_480X640-480x640.jpg',
+ 
   ]
 const Agence = () => {
 
@@ -50,9 +44,9 @@ const Agence = () => {
 
   return (
     <>
-    <div className=' overflow-x-hidden  '>
+    <div className='  overflow-x-hidden  '>
       <div >
-        <img ref={imgRef} className=' h-[38vh]  absolute  top-[24vh] left-[30vw] rounded-3xl ' src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg" />
+        <img ref={imgRef} className=' h-[38vh]  absolute  top-[24vh] left-[30vw] rounded-3xl ' src="assets/Carl_480x640-480x640.jpg" />
       </div>
       <div className='mt-[26%] relative  ' >
         <h1 className='text-[19vw] leading-[17vw] text-center font-[font2] uppercase  '>
