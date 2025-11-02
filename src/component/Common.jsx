@@ -12,12 +12,9 @@ const Common = (props) => {
   let stairParent  = useRef(null)
   
  let rasta = useLocation().pathname;
- console.log(rasta);
-
 
   useGSAP(()=>{
     tl.to(stairParent.current,{
-
       display : 'block',
     })
     .from(mainApp.current,{

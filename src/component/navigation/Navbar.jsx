@@ -4,11 +4,15 @@ import React, { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Links } from 'react-router-dom'
 
+import { FiMenu } from "react-icons/fi";
+
+
 const Navbar = () => {
     
     const smallGreenAnimate = useRef(null)
+    const navIcon = useRef(null)
   return (
-    <div className='fixed z-20 w-full  flex justify-between items-center '>
+    <div  className='fixed z-20 w-full  flex justify-between items-center '>
 
         <Link to='/'className=' w-30 m-2 ' >
            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 103 44">
@@ -16,11 +20,18 @@ const Navbar = () => {
            </svg>
         
         </Link>
-        <div onMouseEnter={()=> smallGreenAnimate.current.style.height = '100%' }
-        onMouseLeave={()=> smallGreenAnimate.current.style.height = '0%'} className='h-17 w-65 relative bg-black cursor-pointer ' >
+        <Link to='/nav' onMouseEnter={()=> {smallGreenAnimate.current.style.height = '100%' ;
+          navIcon.current.style.color = "black" ;
+        }  }
+        onMouseLeave={()=> {smallGreenAnimate.current.style.height = '0%' ;
+                    navIcon.current.style.color = "white" ;
+        }} className='h-17 w-65 relative bg-black cursor-pointer ' >
+          <div ref={navIcon} className='absolute z-10 top-0 right-0 mr-5 text-white ' >
+            <FiMenu size={50} />
+          </div>
             <div ref={smallGreenAnimate} className=' smallNavAnimate absolute w-full top-0 bg-[#D3FD50] transition-all  '>
             </div>
-        </div>
+        </Link>
 
     </div>
   )

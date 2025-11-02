@@ -5,18 +5,19 @@ import Agence from './pages/Agence';
 import Work from './pages/Work';
 import Projects from './pages/Projects';
 import Navbar from './component/navigation/Navbar';
+import FullScreenNav from './component/navigation/FullScreenNav';
 
 
 const App = () => {
 
   
-
-
   return (
     <div>
-      <Navbar></Navbar>
+      {/* <FullScreenNav></FullScreenNav> */}
+      
       <Routes>
         <Route path='/' element={<Home></Home>} />
+        <Route path='/nav' element={<FullScreenNav/>} />
         <Route path='/projects' element={<Projects/>} />
         <Route path='/agence' element={<Agence/>} />
       </Routes>
