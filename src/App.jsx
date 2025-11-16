@@ -12,8 +12,8 @@ const App = () => {
 
   
   return (
+    // <Projects/>
     <div>
-      {/* <FullScreenNav></FullScreenNav> */}
       
       <Routes>
         <Route path='/' element={<Home></Home>} />

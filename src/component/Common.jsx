@@ -41,10 +41,10 @@ const Common = (props) => {
       y : '0%' ,
     })
    
-    gsap.from(mainApp.current,{
-      opacity : 0.5,
-      delay : 1,
-    })
+    // gsap.from(mainApp.current,{
+    //   opacity : 0.5,
+    //   delay : 1,
+    // })
     
   },[rasta])
   return (

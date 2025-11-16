@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react'
 import { Link } from 'react-router-dom'
 import { RxCross1 } from "react-icons/rx";
 import CurrentTime from '../CurrentTime';
+import SocialLinks from '../compo/SocialLinks';
 
 const FullScreenNav = () => {
 
@@ -11,6 +12,7 @@ const FullScreenNav = () => {
   let marq1 = useRef(null)
   let marq2 = useRef(null)
   let marq3 = useRef(null)
+  // let split = useRef(null)
 
   useGSAP(()=>{
     gsap.to(".animateMarque",{
@@ -19,6 +21,19 @@ const FullScreenNav = () => {
       repeat : -1 ,
       ease : "none",
       
+    })
+    gsap.from(".split",{
+      yPercent : 100,
+      duration : 0.5 , 
+      opacity : 0 , 
+      ease : "ease.out",
+      stagger : 0.2,
+    })
+    
+    gsap.from("#crossIcon" , {
+      xPercent : 100 ,
+      opacity : 0,
+      ease : "power2.out"
     })
   })
 
@@ -33,7 +48,7 @@ const FullScreenNav = () => {
         </Link>
 
         <Link to='/' >
-        <RxCross1 className='absolute top-0 hover:text-[#D3FD50]  right-0 ' size={150} />
+        <RxCross1 id='crossIcon' className='absolute top-0 hover:text-[#D3FD50]  right-0 ' size={150} />
         </Link>
 
     <div id='allLinks' className='bg-green-500 overflow-hidden  w-full h-[70%] flex flex-col justify-around text-8xl uppercase font-[font2] items-center ' >
@@ -47,7 +62,8 @@ const FullScreenNav = () => {
       }  }
       className='w-full bg-black cursor-pointer h-full flex justify-center relative p-5 items-center  ' >
       <div className="flatLine w-full h-[1px] absolute top-0 bg-white "></div>
-        <h1>Projects</h1>  
+
+        <h1 className='split'>Projects</h1>  
         
          
           <div ref={marq}  className= ' bg-[#D3FD50] z-10 opacity-0 font-[font2] flex text-black absolute  left-0 align-middle top-0 pt-5   h-full w-[200vw] animateMarque justify-around item-center' >
@@ -73,7 +89,7 @@ const FullScreenNav = () => {
       }  }
       className='w-full bg-black cursor-pointer h-full flex justify-center relative p-5 items-center  '>
 
-        <h1>Agence</h1>
+        <h1 className='split' >Agence</h1>
           <div ref={marq1}  className= ' bg-[#D3FD50] z-10 opacity-0 font-[font2] flex text-black absolute  left-0 align-middle top-0 pt-5   h-full w-[200vw] animateMarque justify-around item-center' >
             <img className='h-20 w-65 rounded-full ' src="assets/NavImg.jpg" alt="" />
           <div>
@@ -96,7 +112,7 @@ const FullScreenNav = () => {
       }  }
       className='w-full bg-black cursor-pointer h-full flex justify-center relative p-5 items-center  '>
       <div className="flatLine w-[100vw]  h-[1px] left-0 absolute top-0 bg-white "></div>
-        <h1>contact</h1>
+        <h1 className='split'>contact</h1>
           <div ref={marq2}  className= ' bg-[#D3FD50] z-10 opacity-0 font-[font2] flex text-black absolute  left-0 align-middle top-0 pt-5   h-full w-[200vw] animateMarque justify-around item-center' >
             <img className='h-20 w-65 rounded-full ' src="assets/NavImg.jpg" alt="" />
           <div>
@@ -118,7 +134,7 @@ const FullScreenNav = () => {
       }  }
       className='w-full bg-black cursor-pointer h-full flex justify-center relative p-5 items-center  '>
       <div className="flatLine w-full h-[1px] absolute left-0 top-0 bg-white "></div>
-        <h1>blog</h1>
+        <h1 className='split'>blog</h1>
          <div ref={marq3}  className= ' bg-[#D3FD50] z-10 opacity-0 font-[font2] flex text-black absolute  left-0 align-middle top-0 pt-5   h-full w-[200vw] animateMarque justify-around item-center' >
             <img className='h-20 w-65 rounded-full ' src="assets/NavImg.jpg" alt="" />
           <div>
@@ -144,20 +160,12 @@ const FullScreenNav = () => {
         <h1 className='cursor-pointer hover:text-[#D3FD50] ' >raport ethique</h1>
         <h1 className='cursor-pointer hover:text-[#D3FD50] ' >options de consentment</h1>
       </div>
-       <div className='bg-black  flex justify-baseline items-center gap-0 mr-15 ' >
-      <Link target="_blank" to='https://www.instagram.com/vikas_gurjar28?igsh=YXk4am53MWtrbnpz' className='border hover:text-[#D3FD50]  rounded-full pl-4 text-center pr-4 border-amber-50 text-[35px] font-[font2]  ' >
-      IG
-      </Link>
-      <Link  className='border hover:text-[#D3FD50] rounded-full pl-4 text-center pr-4 border-amber-50 text-[35px] font-[font2]  '>
-      fb
-      </Link>
-      <Link to='https://www.linkedin.com/in/vikas-gurjar-b04186330/' target="_blank" className='border hover:text-[#D3FD50]  rounded-full pl-4 text-center pr-4 border-amber-50 text-[35px] font-[font2]  '>
-      in
-      </Link>
-    </div>
-    </div>
+      <div className='bg-black  flex justify-baseline text-[35px] items-center gap-0 mr-15 '>
 
-   
+      <SocialLinks/>
+      </div>
+      
+    </div>
 
     </div>
 
