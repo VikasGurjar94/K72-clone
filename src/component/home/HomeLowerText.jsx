@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 
 const HomeLowerText = () => {
   return (
-    <div className=' font-[font2] text-white flex justify-center items-center'>
-      <div className='text-[6vw]  hover:border-[#D3FD50] hover:text-[#D3FD50]  border-5 rounded-full pl-7 pr-7 mr-2 uppercase ' >
-        
-        <Link to='/projects' >projects</Link>
+    <div className='font-[font2] text-white flex justify-center items-center gap-2 sm:gap-4'>
 
-      </div >
-      <div className='text-[6vw] hover:border-[#D3FD50] hover:text-[#D3FD50] border-5 rounded-full ml-2 pl-7 pr-7 uppercase '>
-        
-        <Link to='/agence' >agence</Link>
+      <div className='text-[10vw] sm:text-[7vw] md:text-[5vw] hover:border-[#D3FD50] hover:text-[#D3FD50] border-5 rounded-full px-6 sm:px-8 md:px-10 uppercase'>
+        <Link to='/projects'>projects</Link>
       </div>
+
+      <div className='text-[10vw] sm:text-[7vw] md:text-[5vw] hover:border-[#D3FD50] hover:text-[#D3FD50] border-5 rounded-full px-6 sm:px-8 md:px-10 uppercase'>
+        <Link to='/agence'>agence</Link>
+      </div>
+
     </div>
   )
 }
