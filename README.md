@@ -1,16 +1,73 @@
-# React + Vite
+﻿# K72agency Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A static React + Vite website built as a learning project for web animations, smooth scrolling, GSAP motion, and modern web design.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://k72agency-clone.netlify.app
 
-## React Compiler
+## Project Purpose
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This repository is a practice clone intended to help improve skills in:
 
-## Expanding the ESLint configuration
+- web animation workflows with GSAP
+- smooth scrolling and page transitions
+- responsive UI design for different devices
+- component-based structure using React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What’s Included
+
+- static website built with React and Vite
+- animated sections and interactions using GSAP
+- custom smooth scrolling behavior
+- responsive layouts for desktop, tablet, and mobile
+- design-focused content presentation
+
+## Key Features
+
+- GSAP-driven animations for page elements
+- fluid scroll experience throughout the page
+- responsive navigation and content panels
+- reusable React components for sections and UI blocks
+- static deployment-ready for Netlify
+
+## Folder Structure
+
+- `src/` - source application code
+- `src/App.jsx` - main application shell
+- `src/main.jsx` - React entry point
+- `src/component/` - reusable UI components
+- `src/pages/` - page sections and content views
+- `public/` - public assets, including screenshots and media
+
+## Screenshots
+
+Below are a few screenshots from the live site to show the current UI and animation design:
+
+![Homepage screenshot](public/assets/screen1.png)
+
+![Section screenshot](public/assets/screen2.png)
+
+![Animation preview](public/assets/screen3.png)
+
+![Responsive layout preview](public/assets/screen4.png)
+
+## Running Locally
+
+1. Install dependencies
+   ```bash
+   npm install
+   ```
+2. Start the development server
+   ```bash
+   npm run dev
+   ```
+3. Open the local URL shown in your terminal.
+
+## Notes
+
+This project is not a fully polished production site. It is a hands-on practice project focused on animation techniques, smooth page flow, and responsive front-end design.
+
+## Credits
+
+Built as a learning clone to explore front-end animation and web design best practices.
